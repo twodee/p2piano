@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="#464646"
+  tools:context=".MainActivity">
+
+  <View
+    android:id="@+id/c"
+    style="@style/WhiteKey"
+    android:tag="0"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toStartOf="@+id/d"
+    app:layout_constraintHorizontal_bias="0.5"
+    app:layout_constraintHorizontal_chainStyle="packed"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <View
+    android:id="@+id/d"
+    style="@style/WhiteKey"
+    android:tag="2"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toStartOf="@+id/e"
+    app:layout_constraintHorizontal_bias="0.5"
+    app:layout_constraintStart_toEndOf="@+id/c"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <View
+    android:id="@+id/e"
+    style="@style/WhiteKey"
+    android:tag="4"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toStartOf="@+id/f"
+    app:layout_constraintHorizontal_bias="0.5"
+    app:layout_constraintStart_toEndOf="@+id/d"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <View
+    android:id="@+id/f"
+    style="@style/WhiteKey"
+    android:tag="5"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toStartOf="@+id/g"
+    app:layout_constraintHorizontal_bias="0.5"
+    app:layout_constraintStart_toEndOf="@+id/e"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <View
+    android:id="@+id/g"
+    style="@style/WhiteKey"
+    android:tag="7"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toStartOf="@+id/a"
+    app:layout_constraintHorizontal_bias="0.5"
+    app:layout_constraintStart_toEndOf="@+id/f"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <View
+    android:id="@+id/a"
+    style="@style/WhiteKey"
+    android:tag="9"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toStartOf="@+id/b"
+    app:layout_constraintHorizontal_bias="0.5"
+    app:layout_constraintStart_toEndOf="@+id/g"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <View
+    android:id="@+id/b"
+    style="@style/WhiteKey"
+    android:tag="11"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.5"
+    app:layout_constraintStart_toEndOf="@+id/a"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <View
+    android:id="@+id/cd"
+    style="@style/BlackKey"
+    android:tag="1"
+    app:layout_constraintBottom_toTopOf="@+id/black_bottom"
+    app:layout_constraintEnd_toEndOf="@+id/d"
+    app:layout_constraintStart_toStartOf="@+id/c"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <View
+    android:id="@+id/de"
+    style="@style/BlackKey"
+    android:tag="3"
+    app:layout_constraintBottom_toTopOf="@+id/black_bottom"
+    app:layout_constraintEnd_toEndOf="@+id/e"
+    app:layout_constraintStart_toStartOf="@+id/d"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <View
+    android:id="@+id/fg"
+    style="@style/BlackKey"
+    android:tag="6"
+    app:layout_constraintBottom_toTopOf="@+id/black_bottom"
+    app:layout_constraintEnd_toEndOf="@+id/g"
+    app:layout_constraintStart_toStartOf="@+id/f"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <View
+    android:id="@+id/ga"
+    style="@style/BlackKey"
+    android:tag="8"
+    app:layout_constraintBottom_toTopOf="@+id/black_bottom"
+    app:layout_constraintEnd_toEndOf="@+id/a"
+    app:layout_constraintStart_toStartOf="@+id/g"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <View
+    android:id="@+id/ab"
+    style="@style/BlackKey"
+    android:tag="10"
+    app:layout_constraintBottom_toTopOf="@+id/black_bottom"
+    app:layout_constraintEnd_toEndOf="@+id/b"
+    app:layout_constraintStart_toStartOf="@+id/a"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <androidx.constraintlayout.widget.Guideline
+    android:id="@+id/black_bottom"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    app:layout_constraintGuide_percent="0.6" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
